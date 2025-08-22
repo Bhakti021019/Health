@@ -1,0 +1,361 @@
+/* ---------- General ---------- */
+.homepage {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-color: rgb(128, 128, 0); /* global olive */
+  min-height: 100vh; /* ensures it fills the viewport */
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  background: rgb(22, 42, 44);
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #C97C50;
+}
+
+.hero-content h1 span {
+  color: rgb(245, 240, 230);
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin: 20px 0;
+  line-height: 1.6;
+  color: rgb(254, 252, 246);
+}
+
+.hero-image img {
+  max-width: 420px;
+  border-radius: 20px;
+}
+
+.btn-primary {
+  background: #4caf93;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #3a8d74;
+}
+
+/* ---------- About Section ---------- */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  background: rgb(230, 216, 195);
+}
+
+.about-image img {
+  max-width: 400px;
+  border-radius: 20px;
+}
+
+.about-text {
+  max-width: 50%;
+}
+
+.about-text h3 {
+  color: rgb(123, 94, 87);
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #4caf93;
+  color: #4caf93;
+  padding: 10px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: #4caf93;
+  color: white;
+}
+
+/* ---------- Features Section ---------- */
+.features {
+  padding: 80px 10%;
+  background: #a8c4af;
+  text-align: center;
+}
+
+.features h3 {
+  color: #b6a258;
+  font-size: 1rem;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin: 10px 0 20px;
+}
+
+.features p {
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  font-size: 1.1rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+@media (max-width: 992px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .features-grid {
+    grid-template-columns: 1fr; /* 1 per row on mobile */
+  }
+}
+
+.feature-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card i {
+  font-size: 2rem;
+  color: #4caf93;
+  margin-bottom: 15px;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* Align navbar items */
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Style the profile icon dropdown */
+.nav-link.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  padding-right: 10px; /* Optional padding for better alignment */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  min-width: 200px; /* Ensure dropdown is wide enough */
+  padding: 0;
+}
+
+/* On small screens, adjust the navbar items */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/*Footer*/
+.footer{
+  background: #e0dcd5;
+  padding: 40px 20px;
+  text-align: center;
+  color: #333;
+}
+
+.footer-top .brand{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  color: #9c8355;
+}
+
+.footer.top .tagline{
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.footer-links{
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-links h4{
+  margin-bottom: 10px;
+  color: #a3895a;
+  font-weight: bold;
+}
+
+.footer-links a{
+  text-decoration: none;
+  color: #555;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover{
+  color: #9c8355;
+}
+
+.footer-bottom{
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.social a{
+  margin: 0 10px;
+  color: #555;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social a:hover{
+  color: #9c8355;
+}
+/* Container for both image and form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(241, 236, 229); /* Light background color */
+  padding: 0 20px;
+}
+
+/* Form container */
+.form-container {
+  background: rgb(228, 201, 178);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  margin-left: 100px;
+}
+
+/* Heading */
+h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Input group */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Label styling */
+label {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Input styling */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+/* Submit button */
+.btn-pink {
+  background-color: #3a8d74;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-pink:hover {
+  background-color: #3a8d74;
+}
+
+/* Link under the form */
+.signup-link {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: #3a8d74;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/*Image Container*/
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  max-width: 600px;   /* optional: prevent it from getting too huge */
+  margin: 0 auto;
+}
+
+.image-container img {
+  width: 100%;       /* take full width of container */
+  height: auto;      /* maintain aspect ratio */
+  object-fit: contain; /* ensures no cropping */
+}
+

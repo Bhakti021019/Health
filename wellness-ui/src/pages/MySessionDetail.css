@@ -1,0 +1,85 @@
+.session-detail-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.session-detail-card {
+  background: #f9f4ef;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+}
+
+.detail-title {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #9c8355;
+}
+
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: white;
+}
+
+.status-badge.draft {
+  background: #ffc107;
+}
+
+.status-badge.published {
+  background: #28a745;
+}
+
+.actions {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: background 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.brown {
+  background: #9c8355;
+}
+
+.btn.brown:hover {
+  background: #7a6840;
+}
+
+.btn.yellow {
+  background: #ffc107;
+  color: #333;
+}
+
+.btn.yellow:hover {
+  background: #e0a800;
+}
+
+.btn.green {
+  background: #28a745;
+}
+
+.btn.green:hover {
+  background: #1e7e34;
+}
+
+.btn.red {
+  background: #dc3545;
+}
+
+.btn.red:hover {
+  background: #a71d2a;
+}
